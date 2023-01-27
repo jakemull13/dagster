@@ -32,3 +32,11 @@ At this point, you can view the **completed** project in Dagit by running:
 cd tutorial_finished
 dagit
 ```
+
+## My additions
+
+create a new code location/repository: 'bigquery'
+
+Because I didn't want to use DuckDB like the original tutorial, I removed the IO Manager and DuckDB assets.
+The only assets needed are those imported as a resource from dagster-dbt using the import assets function. 
+I'm not using seed files, so IO Manager not needed. If I did want to use seed files, I would need to use/build a custom IO manager for GCP/bigquery, since it doesn't exist in a default Dagster library (yet).

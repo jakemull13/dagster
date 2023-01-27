@@ -1,10 +1,10 @@
-jaffle_shop:
+my_dbt_project:
   target: dev
   outputs:
     dev:
       type: bigquery
       method: service-account
       project: jake-mullins-dbt
-      dataset: jaffle_shop
+      dataset: my_dbt_project
       threads: 1
       keyfile: "/Users/jakemullins/credentials/personal-gcp-service-account.json"
